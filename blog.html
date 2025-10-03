@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <!-- Bootsrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- GlightBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Font Design -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- AOS Library Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- In the <head> -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />            
+
+    
+    <title>Tour and Travel</title>
+</head>
+<body>
+
+    <header class="container-fluid">
+       
+        <div class="d-flex justify-content-between align-items-center mx-5 d-none d-lg-flex">
+            
+            <!-- Left: Logo -->
+            <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logo.avif" alt="Logo" class="img-fluid" height="auto" width="120px">
+            </a>
+            </div>
+
+            <!-- Center: Nav Items -->
+            <ul class="nav justify-content-center flex-grow-1">
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="service.html">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="india.html">India</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="gallery.html">Gallery</a>
+            </li>
+            </ul>
+
+            <!-- Right side: Button -->
+            <div class="d-flex">
+                <a href="contact.html" class="connect">Get in Touch</a>
+            </div>
+
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm px-3 d-lg-none">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.avif" alt="Logo" class="img-fluid" width="120">
+                </a>
+
+                <!-- Toggle button for mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav Links -->
+                <div class="collapse navbar-collapse mobile-nav" id="mainNavbar">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="india.html">India</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+
+                <!-- Button -->
+                <div class="d-flex">
+                    <a href="#contact" class="btn connect">Get in Touch</a>
+                </div>
+                </div>
+            </div>
+        </nav>
+ 
+    </header>
+
+    <section class="tour-bg" style=" background-image: url(assets/images/background.webp);">
+        <div class="container">
+            <h3 class="heading animate-text">Blog</h2>
+        </div>
+    </section>
+
+    <!-- Featured / Latest Blogs Section -->
+    <section class="blogs">
+        <div class="headline">
+            <h2 class="animate-text">Featured & Latest Blogs</h2>
+            <p class="text-muted">Discover travel tips, guides, and stories from across India</p>
+        </div>
+        <div class="container">
+            <div class="row g-4">
+            <!-- Blog 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                <div class="position-relative">
+                    <img src="assets/images/jaipur-2.jpg" class="card-img-top" alt="Blog Image">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Exploring Rajasthan's Royal Heritage</h5>
+                    <p class="card-text text-muted">From Jaipur to Udaipur, discover the majestic forts, palaces, and traditions of Rajasthan.</p>
+                    <a href="Rajasthan-Tour.html"><button type="" class="read-btn">Read More</button></a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                <img src="assets/images/delhi.png" class="card-img-top" alt="Blog Image">
+                <div class="card-body">
+                    <h5 class="card-title">Top 10 Street Foods in Delhi</h5>
+                    <p class="card-text text-muted">A foodie's guide to Delhi – from spicy chaats to sweet jalebis, taste the flavors of India.</p>
+                    <a href="india.html"><button type="" class="read-btn">Read More</button></a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                <img src="assets/images/Varanasi.jpg" class="card-img-top" alt="Blog Image">
+                <div class="card-body">
+                    <h5 class="card-title">A Spiritual Journey to Varanasi</h5>
+                    <p class="card-text text-muted">Experience the ghats, Ganga Aarti, and timeless spirituality of India’s holiest city.</p>
+                    <a href="Uttrakhand.html"><button type="" class="read-btn">Read More</button></a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section / Filter Tabs -->
+    <section class="blog-tab">
+        <div class="headline">
+            <h2 class="animate-text">Browse by Category</h2>
+            <p class="text-muted">Find blogs by destinations, tips, culture, and more</p>
+        </div>
+        <div class="container">
+
+            <!-- Tabs Navigation -->
+            <ul class="nav nav-pills justify-content-center mb-4" id="categoryTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link tabBtn active" id="destinations-tab" data-bs-toggle="tab" data-bs-target="#destinations" type="button" role="tab">
+                Destinations
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link tabBtn" id="tips-tab" data-bs-toggle="tab" data-bs-target="#tips" type="button" role="tab">
+                Travel Tips
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link tabBtn" id="food-tab" data-bs-toggle="tab" data-bs-target="#food" type="button" role="tab">
+                Food & Culture
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link tabBtn" id="festivals-tab" data-bs-toggle="tab" data-bs-target="#festivals" type="button" role="tab">
+                Festivals
+                </button>
+            </li>
+            </ul>
+
+            <!-- Tabs Content -->
+            <div class="tab-content" id="categoryTabsContent">
+            <!-- Destinations -->
+            <div class="tab-pane fade show active" id="destinations" role="tabpanel">
+                <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100">
+                    <img src="assets/images/rajasthan-bg.jpg" class="card-img-top" alt="Rajasthan">
+                    <div class="card-body">
+                        <h5 class="card-title">Rajasthan – Land of Royals</h5>
+                        <p class="card-text text-muted">Explore forts, palaces, and desert safaris.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100">
+                    <img src="assets/images/Kerala.jpg" class="card-img-top" alt="Kerala">
+                    <div class="card-body">
+                        <h5 class="card-title">Kerala – God's Own Country</h5>
+                        <p class="card-text text-muted">Backwaters, beaches, and Ayurveda retreats.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            <!-- Travel Tips -->
+            <div class="tab-pane fade" id="tips" role="tabpanel">
+                <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100">
+                    <img src="assets/images/maharashtra-bg.jpg" class="card-img-top" alt="Tips">
+                    <div class="card-body">
+                        <h5 class="card-title">Packing Tips for India</h5>
+                        <p class="card-text text-muted">Smart hacks for travelers visiting India.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Food & Culture -->
+            <div class="tab-pane fade" id="food" role="tabpanel">
+                <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100">
+                    <img src="assets/images/chole-bature.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Top 5 Indian Street Foods</h5>
+                        <p class="card-text text-muted">Delicious chaats, momos, and kebabs.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Festivals -->
+            <div class="tab-pane fade" id="festivals" role="tabpanel">
+                <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100">
+                    <img src="assets/images/diwali.jpg" class="card-img-top" alt="Festival">
+                    <div class="card-body">
+                        <h5 class="card-title">Diwali – Festival of Lights</h5>
+                        <p class="card-text text-muted">Experience India’s most colorful festival.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100">
+                    <img src="assets/images/holi.jpeg" class="card-img-top" alt="Festival">
+                    <div class="card-body">
+                        <h5 class="card-title">Holi – Festival of Colors</h5>
+                        <p class="card-text text-muted">Celebrate with vibrant colors, music, and joy as India welcomes the spring season.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100">
+                    <img src="assets/images/durgapuja.jpg" class="card-img-top" alt="Festival">
+                    <div class="card-body">
+                        <h5 class="card-title">Durga Puja – Spirit of Bengal</h5>
+                        <p class="card-text text-muted">Experience artistic pandals, rituals, and cultural performances celebrating Goddess Durga.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / Subscribe Section -->
+    <section class="newsletter">
+        <div class="headline">
+                <h2 class="animate-text">Subscribe to Our Newsletter</h2>
+                <p class="text-muted">Get the latest travel stories, tips, and destinations delivered straight to your inbox.</p>
+        </div>
+        <div class="container text-center">
+            <!-- Form -->
+            <form class="row g-2 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email" required>
+            </div>
+            <div class="col-md-2 col-lg-2">
+                <button type="submit" class="btn btn-primary btn-lg w-100">Subscribe</button>
+            </div>
+            </form>
+
+            <!-- Small text -->
+            <small class="text-muted d-block mt-3">
+            We respect your privacy. Unsubscribe anytime.
+            </small>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 class="foot-head">Quick Contact</h3>
+                        <a href="">
+                            <div class="icon-circle">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                <p>123, MG Road, Mumbai, India</p>
+                            </div>
+                            
+                            
+                        </a>
+                        <a href="">
+                            <div class="icon-circle">
+                                <i class="fas fa-phone-alt me-2"></i> 
+                                <p>+91 9876543210</p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="icon-circle">
+                                <i class="fas fa-envelope me-2"></i> 
+                                <p>contact@example.com</p>
+                            </div>
+                        </a>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="foot-head">Services</h3>
+                    
+                        <a href="">Tour Package</a>
+                        <a href="">Hotel Booking</a>
+                        <a href="">Travel Insurance</a>
+                        <a href="">Flight Booking</a>
+                    
+                </div>
+                <div class="col-md-3">
+                    <h3 class="foot-head">Contact</h3>
+                        <a href="">FAQ</a>
+                        <a href="">Careers</a>
+                        <a href="">Get in Touch</a>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="foot-head">Social</h3>
+                    <div class="social">
+                        <a href="#" class="me-4">
+                            <div class="icon-circle">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="me-4">
+                            <div class="icon-circle">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="me-4">
+                            <div class="icon-circle">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="">
+                            <div class="icon-circle">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-foot">
+            <p>@copyright 2025 travel.com</p>
+        </div>
+        
+    </footer>
+ 
+  <!-- jQuery (required for Owl Carousel) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- OWL CAROUSEL -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- JS  -->
+ <script src="assets/js/script.js"></script>
+
+ <!-- Glight Box -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({
+        selector: '.glightbox'
+    });
+    </script>
+
+    <!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+ 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const texts = document.querySelectorAll(".animate-text");
+
+    texts.forEach(text => {
+      const characters = text.textContent.split("").map(char => char === " " ? "\u00A0" : char);
+
+
+      // Clear original text
+      text.textContent = "";
+
+      // Rebuild text with spans
+      characters.forEach(char => {
+        const span = document.createElement("span");
+        span.textContent = char;
+        span.style.display = "inline-block"; // Needed for transform animations
+        span.style.opacity = "0";
+        span.style.transform = "translateY(30px)";
+        text.appendChild(span);
+      });
+
+      // Animate each span on scroll
+      gsap.to(text.querySelectorAll("span"), {
+        scrollTrigger: {
+          trigger: text,
+          start: "top 90%",
+          toggleActions: "play none none none",
+        },
+        opacity: 1,
+        y: 0,
+        stagger: 0.03,
+        duration: 0.6,
+        ease: "power2.out"
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>
+
+
+

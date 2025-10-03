@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <!-- Bootsrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- GlightBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Font Design -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- AOS Library Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- In the <head> -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />            
+
+    
+    <title>Tour and Travel</title>
+</head>
+<body>
+
+    <header class="container-fluid">
+       
+        <div class="d-flex justify-content-between align-items-center mx-5 d-none d-lg-flex">
+            
+            <!-- Left: Logo -->
+            <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logo.avif" alt="Logo" class="img-fluid" height="auto" width="120px">
+            </a>
+            </div>
+
+            <!-- Center: Nav Items -->
+            <ul class="nav justify-content-center flex-grow-1">
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="service.html">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="india.html">India</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hover-underline" href="gallery.html">Gallery</a>
+            </li>
+            </ul>
+
+            <!-- Right side: Button -->
+            <div class="d-flex">
+                <a href="contact.html" class="connect">Get in Touch</a>
+            </div>
+
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm px-3 d-lg-none">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.avif" alt="Logo" class="img-fluid" width="120">
+                </a>
+
+                <!-- Toggle button for mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav Links -->
+                <div class="collapse navbar-collapse mobile-nav" id="mainNavbar">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="india.html">India</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link hover-underline" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+
+                <!-- Button -->
+                <div class="d-flex">
+                    <a href="#contact" class="btn connect">Get in Touch</a>
+                </div>
+                </div>
+            </div>
+        </nav>
+ 
+    </header>
+
+    <section class="tour-bg" style=" background-image: url(assets/images/Gallery.jpg);">
+        <div class="container">
+            <h3 class="heading animate-text">Gallery</h2>
+        </div>
+    </section>
+    
+    <section class="gall">
+        <div class="headline">
+            <h2 class="animate-text">Explore Our Gallery</h2>
+        </div>
+
+        <div class="container">
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills justify-content-center mb-4" id="galleryTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+            <button class="nav-link tabBtn active" id="hidden-tab" data-bs-toggle="pill" data-bs-target="#hidden" type="button" role="tab">Hidden Gems</button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link tabBtn" id="nature-tab" data-bs-toggle="pill" data-bs-target="#nature" type="button" role="tab">Nature</button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link tabBtn" id="adventure-tab" data-bs-toggle="pill" data-bs-target="#adventure" type="button" role="tab">Adventure</button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link tabBtn" id="culture-tab" data-bs-toggle="pill" data-bs-target="#culture" type="button" role="tab">Culture</button>
+            </li>
+        </ul>
+
+        <!-- Tab content -->
+        <div class="tab-content" id="galleryTabsContent">
+            <!-- Hidden Gem Images -->
+            <div class="tab-pane fade show active" id="hidden" role="tabpanel">
+            <div class="gall-grid">
+                <div class="item">
+                    <a href="assets/images/Kalimpong-1.jpg">
+                        <img src="assets/images/Kalimpong-1.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Kolkata.jpg">
+                        <img src="assets/images/Kolkata.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/himachalpradesh-1.jpg">
+                        <img src="assets/images/himachalpradesh-1.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Kashmir.jpg">
+                        <img src="assets/images/Kashmir.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Ooty.jpg">
+                        <img src="assets/images/Ooty.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Darjeeling.webp">
+                        <img src="assets/images/Darjeeling.webp" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Haridwar.jpg">
+                        <img src="assets/images/Haridwar.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/uttarakhand.jpg">
+                        <img src="assets/images/uttarakhand.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="assets/images/Lonavala.jpg">
+                        <img src="assets/images/Lonavala.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Kanyakumari-2.jpg">
+                        <img src="assets/images/Kanyakumari-2.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Jaisalmer.jpg">
+                        <img src="assets/images/Jaisalmer.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Jabalpur.webp">
+                        <img src="assets/images/Jabalpur.webp" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Nature Tab -->
+            <div class="tab-pane fade" id="nature" role="tabpanel">
+            <div class="gall-grid">
+                <div class="item">
+                    <a href="assets/images/Kochi-1.jpg">
+                        <img src="assets/images/Kochi-1.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/kochi-2.jpg">
+                        <img src="assets/images/kochi-2.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Chopta.jpeg">
+                        <img src="assets/images/nature-2.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Auli.jpg">
+                        <img src="assets/images/nature-3.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Valley of Flowers.jpg">
+                        <img src="assets/images/Valley of Flowers.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Mussoorie.jpg">
+                        <img src="assets/images/Mussoorie.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Munnar.jpeg">
+                        <img src="assets/images/Munnar.jpeg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Thekkady-3.jpg">
+                        <img src="assets/images/Thekkady-3.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="assets/images/Wayanad-2.jpg">
+                        <img src="assets/images/Wayanad-2.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Alleppey-2.jpg">
+                        <img src="assets/images/Alleppey-2.jpg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/Alleppey-1.jpeg">
+                        <img src="assets/images/Alleppey-1.jpeg" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="assets/images/kochi-4.webp">
+                        <img src="assets/images/kochi-4.webp" alt="" class="img-fluid glightbox">
+                    </a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Adventure Tab -->
+            <div class="tab-pane fade" id="adventure" role="tabpanel">
+                <div class="gall-grid">
+                    <div class="item">
+                        <a href="assets/images/Nainital-1.jpg">
+                            <img src="assets/images/Nainital-1.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/adventure.jpg">
+                            <img src="assets/images/adventure.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/adventure-1.webp">
+                            <img src="assets/images/adventure-1.webp" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/Aurangabad.jpg">
+                            <img src="assets/images/Aurangabad.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/Bandhavgarh National Park-1.jpeg">
+                            <img src="assets/images/Bandhavgarh National Park-1.jpeg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/Dharamshala & McLeod Ganj-bg.jpeg">
+                            <img src="assets/images/Dharamshala & McLeod Ganj-bg.jpeg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/Kalimpong-1.jpg">
+                            <img src="assets/images/Kalimpong-1.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/Kalimpong-2.jpg">
+                            <img src="assets/images/Kalimpong-2.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="assets/images/Orchha.jpg">
+                            <img src="assets/images/Orchha.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/Kashmir.jpg">
+                            <img src="assets/images/Kashmir.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/Gwalior.jpg">
+                            <img src="assets/images/Gwalior.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/Gulmarg-2.webp">
+                            <img src="assets/images/Gulmarg-2.webp" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Culture Tab -->
+            <div class="tab-pane fade" id="culture" role="tabpanel">
+                <div class="gall-grid">
+                    <div class="item">
+                        <a href="assets/images/culture.jpeg">
+                            <img src="assets/images/culture.jpeg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/culture-1.jpg">
+                            <img src="assets/images/culture-1.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/culture-2.jpg">
+                            <img src="assets/images/culture-2.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/culture-3.jpg">
+                            <img src="assets/images/culture-3.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/culture-4.jpeg">
+                            <img src="assets/images/culture-4.jpeg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/culture-5.jpeg">
+                            <img src="assets/images/culture-5.jpeg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/culture-10.jpg">
+                            <img src="assets/images/culture-10.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/culture-6.webp">
+                            <img src="assets/images/culture-6.webp" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="assets/images/culture-7.jpeg">
+                            <img src="assets/images/culture-7.jpeg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/culture-8.jpg">
+                            <img src="assets/images/culture-8.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/culture-11.jpeg">
+                            <img src="assets/images/culture-11.jpeg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="assets/images/culture-12.jpg">
+                            <img src="assets/images/culture-12.jpg" alt="" class="img-fluid glightbox">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 class="foot-head">Quick Contact</h3>
+                        <a href="">
+                            <div class="icon-circle">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                <p>123, MG Road, Mumbai, India</p>
+                            </div>
+                            
+                            
+                        </a>
+                        <a href="">
+                            <div class="icon-circle">
+                                <i class="fas fa-phone-alt me-2"></i> 
+                                <p>+91 9876543210</p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="icon-circle">
+                                <i class="fas fa-envelope me-2"></i> 
+                                <p>contact@example.com</p>
+                            </div>
+                        </a>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="foot-head">Services</h3>
+                    
+                        <a href="">Tour Package</a>
+                        <a href="">Hotel Booking</a>
+                        <a href="">Travel Insurance</a>
+                        <a href="">Flight Booking</a>
+                    
+                </div>
+                <div class="col-md-3">
+                    <h3 class="foot-head">Contact</h3>
+                        <a href="">FAQ</a>
+                        <a href="">Careers</a>
+                        <a href="">Get in Touch</a>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="foot-head">Social</h3>
+                    <div class="social">
+                        <a href="#" class="me-4">
+                            <div class="icon-circle">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="me-4">
+                            <div class="icon-circle">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="me-4">
+                            <div class="icon-circle">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="">
+                            <div class="icon-circle">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-foot">
+            <p>@copyright 2025 travel.com</p>
+        </div>
+        
+    </footer>
+ 
+  <!-- jQuery (required for Owl Carousel) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- OWL CAROUSEL -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- JS  -->
+ <script src="assets/js/script.js"></script>
+
+ <!-- Glight Box -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({
+        selector: '.glightbox'
+    });
+    </script>
+
+    <!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+ 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const texts = document.querySelectorAll(".animate-text");
+
+    texts.forEach(text => {
+      const characters = text.textContent.split("").map(char => char === " " ? "\u00A0" : char);
+
+
+      // Clear original text
+      text.textContent = "";
+
+      // Rebuild text with spans
+      characters.forEach(char => {
+        const span = document.createElement("span");
+        span.textContent = char;
+        span.style.display = "inline-block"; // Needed for transform animations
+        span.style.opacity = "0";
+        span.style.transform = "translateY(30px)";
+        text.appendChild(span);
+      });
+
+      // Animate each span on scroll
+      gsap.to(text.querySelectorAll("span"), {
+        scrollTrigger: {
+          trigger: text,
+          start: "top 90%",
+          toggleActions: "play none none none",
+        },
+        opacity: 1,
+        y: 0,
+        stagger: 0.03,
+        duration: 0.6,
+        ease: "power2.out"
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>

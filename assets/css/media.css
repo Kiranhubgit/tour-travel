@@ -1,0 +1,95 @@
+.navbar-toggler{
+    background-color: #fff !important;
+}
+
+@media only screen and (max-width: 767.8px) {
+   .destination-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .heading {
+      font-size: 20px !important;
+      line-height: 36px !important;
+      width: 86%;
+    }
+    .para-main {
+        font-size: 20px !important;
+        line-height: 36px !important;
+        width: 86% !important;
+    }
+    .para-submain {
+        font-size: 18px !important;
+        width: 86% !important;
+    }
+    .logo {
+        width: 128px !important;
+    }
+    .headline h2 {
+      font-size: 18px !important;
+    }
+    h3 {
+        font-size: 20px !important;
+    }
+    .text-over-image {
+      font-size: 16px !important;
+    }
+    .hidden-Details {
+      padding: 6px 14px !important;
+      font-size: 14px !important;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr) !important;
+      gap: 20px;
+    }
+    .headline {
+      text-align: center;
+      padding-top: 20px !important;
+      padding-bottom: 10px !important;
+    }
+    .letconn{
+      padding-top: 10px !important;
+    }
+    footer{
+      padding-top: 20px !important;
+    }
+    .foot-head{
+      padding-top: 20px !important;
+      padding-bottom: 20px !important;
+    }
+    .gall-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr) !important;
+      gap: 10px;
+      margin-top: 35px;
+    }
+    .nav-link{
+      font-size: 14px !important;
+    }
+    .gall {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
+    .subscribe-btn{
+      margin-top: 8px !important;
+      margin-bottom: 12px !important;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 768px) and (max-width: 991.78px) { 
+    
+   
+}
+ 
+@media screen and (min-device-width: 992px) and (max-device-width: 1200px) { 
+
+}
+
+
+@media screen and (min-device-width: 1400px) and (max-device-width: 2560px){
+}
+
+  

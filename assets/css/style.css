@@ -1,0 +1,855 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+
+header{
+    position: fixed;
+    z-index: 999;
+    /* background-color: rgba(0, 0, 0, 0.36); */
+    background-color: black;
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+header.scrolled,
+header:hover {
+    background-color: black;
+}
+a.nav-link {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.hover-underline {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.hover-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* Show dropdown menu on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.mobile-nav{
+  border-top: 1px solid grey;
+  margin-top: 14px;
+}
+.connect{
+  /* color: #fff !important;
+  border: 2px solid #fff !important;
+  border-radius: 16px!important;
+  padding: 6px 16px !important;
+  text-transform: uppercase !important; */
+
+
+  background: linear-gradient(to left, #e1540e 50%, rgba(213, 209, 209, 0.89) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #fff;
+  border: none;
+  padding: 8px 14px !important;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-position 0.4s ease-in-out;
+  border-radius: 7px!important;
+  text-transform: uppercase !important;
+  text-decoration: none;
+}
+
+.connect:hover{
+  /* background-color: #00eeff !important;
+  color: black !important; */
+
+  background-position: left bottom;
+  color: black;
+  
+}
+.first{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+/* .bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+} */
+ /* .hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+} */
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* grey-black overlay */
+    z-index: 1;
+}
+
+.details {
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    z-index: 2; /* above the overlay */
+    text-align: left;
+    color: white;
+    /* padding-top: 40px; */
+    padding-bottom: 40px;
+}
+
+ 
+.bg img{
+  height: 810px;
+}
+.details{
+    position: relative;
+    bottom: 380px;
+    color: #fff;
+    z-index: 999;
+    margin-top: -120px;
+}
+section.description {
+    /* margin-top: -260px; */
+    margin-top: -120px;
+}
+.heading {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 58px;
+  width: 70%;
+
+}
+.para-main{
+  font-size: 30px;
+  line-height: 52px;
+  width: 70%;
+  padding-top: 20px;
+}
+.para-submain{
+  font-size: 24px;
+  width: 70%;
+}
+.highlighted{
+  color: rgb(239, 239, 7);
+  font-weight: bolder;
+}
+
+img.fit {
+    width: 100%;
+    height: auto;
+    
+}
+.imageFit {
+    overflow: hidden;
+    object-fit: cover;
+  }
+.headline{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* padding-bottom: 60px; */
+}
+.desc-head{
+  padding-bottom: 20px;
+}
+.headline h2{
+  font-size: 40px;
+}
+.para{
+    color: black;
+    width: 80%;
+    /* font-size: 92%; */
+    font-size: 120%;
+    line-height: 40px;
+}
+.destination{
+  margin-bottom: 40px;
+}
+
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.destination-grid img:hover {
+    transform: scale(1.2);
+}
+
+.items {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* or any fixed width */
+    overflow: hidden;
+  }
+  .items img.check {
+    transition: transform 0.4s ease;
+  }
+
+  .items:hover img.check {
+    transform: scale(1.2); /* Zoom in */
+  }
+  
+  .items::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+
+  .items img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+  }
+
+  .text-over-image {
+    position: absolute;
+    top: 50%; /* vertical center */
+    left: 50%; /* horizontal center */
+    transform: translate(-50%, -50%); /* perfect center */
+    color: white; /* or any color that stands out */
+    font-size: 24px;
+    z-index: 3;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .hidden-Details {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    /* background-color: #007bff; */
+    background-color: #e1540e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0; /* hidden by default */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+
+  .items:hover .hidden-Details {
+    opacity: 1; /* show on hover */
+  }
+/* image and video part  */
+#e3 .item {
+  width: 100%;
+  height: 300px; /* You can adjust this height as per design */
+  overflow: hidden;
+}
+
+#e3 .item video,
+#e3 .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures media fills container without distortion */
+}
+.testimonials{
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.testi-img{
+  height: 210px !important;
+  width: 210px !important;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.review{
+  text-align: center;
+}
+.testi-review{
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+/* ======================================= CONTACT PAGE ================================================== */
+.frontBg{
+  background-image: url(../images/contactUd-bg.jpg);
+  width: 100% !important;
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 230px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+.frontBg::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 55vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  /* z-index: 2; */
+}
+.heading{
+  color: #fff;
+}
+.contactUs{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.form-label{
+  color:  rgb(113, 113, 3);
+  font-weight: 600;
+  font-size: 18px;
+}
+.asterisk{
+  color: red;
+}
+.submit-btn{
+  background: linear-gradient(to left, #ff9900 50%, rgb(103, 103, 74) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-position 0.4s ease-in-out;
+  border: 2px solid black;
+  border-radius: 25px 0px 25px 0px;
+}
+.submit-btn:hover{
+    /* background-position: right bottom; */
+    background-position: left bottom;
+}
+.map{
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
+}
+.map-mssg{
+  text-align: center;
+  font-size: 18px;
+}
+.location{
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
+}
+.icon-circle-white {
+    display: flex;
+    gap: 4px;
+}
+.icon-circle-white i{
+  background-color: rgb(113, 113, 3);
+  /* color: black; */
+  color: #fff;
+  width: 35px;
+    height: 35px;
+    border-radius: 50%;         /* Makes it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.cnt-dlts{
+  font-size: 18px;
+}
+.subscribe{
+  /* padding-top: 50px; */
+  padding-bottom: 50px;
+}
+.subscribers{
+    text-align: center;
+    /* line-height: 32px; */
+}
+.subs-para{
+  text-align: center;
+  padding-top: 20px;
+}
+.subscribe-btn{
+  margin-top: 110px;
+}
+.subscribe-btn input{
+  padding: 16px 6px;
+}
+.subscribe-btn button{
+  background: linear-gradient(to left, #ff9900 50%, rgb(103, 103, 74) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-position 0.4s ease-in-out;
+  border: 1px solid black;
+}
+/* ============================================== CONTACT PAGE END HERE ======================================= */
+
+/* ============================================== About Page Start Here ======================================= */
+.aboutBg{
+  background-image: url(../images/about-bg.jpeg);
+  width: 100% !important;
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 230px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+.aboutBg::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 55vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  /* z-index: 2; */
+}
+.hero-para{
+ font-size: 16px;
+ line-height: 32px;
+}
+.Mission{
+    width: 100%;
+    height: auto;
+    background-image: url(../images/about-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* margin-top: 60px;
+    margin-bottom: 60px; */
+  
+}
+.Mission::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+.miss-cont{
+  z-index: 999;
+}
+.miss-head{
+  color: #fff;
+}
+.mission-para{
+  color: #fff;
+  font-size: 16px;
+ line-height: 32px;
+}
+.image-grid-box img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.img-1 {
+  height: 180px;
+}
+.img-2 {
+  height: 140px;
+}
+.img-3 {
+  height: 140px;
+}
+.img-4 {
+  height: 180px;
+}
+.offer{
+  /* margin-top: 60px; */
+  margin-bottom: 60px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+/* ======================================= ABOUT PAGE END HERE ================================================== */
+
+/* =========================================TOUR PAGES START HERE ============================================= */
+
+.tour-bg{
+  width: 100% !important;
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 230px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+.tour-bg::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 55vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  /* z-index: 2; */
+}
+.top-desitanion{
+  /* padding-top: 60px; */
+  padding-bottom: 60px;
+  /* margin-top: 60px; */
+  margin-bottom: 60px;
+}
+.maha-packages{
+  /* margin-bottom: 60px; */
+  padding-bottom: 60px;
+  background-color: rgba(213, 209, 209, 0.738);
+}
+.book{
+  background: linear-gradient(to left, #e1540e 50%, rgba(213, 209, 209, 0.89) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-position 0.4s ease-in-out;
+  border: 2px solid black;
+  border-radius: 25px 0px 25px 0px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 6px;
+}
+.book:hover{
+  background-position: left bottom;
+  color: black;
+}
+.book-icon{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  color: brown;
+}
+.book:hover .book-icon {
+  background-color: brown;
+  color: #fff;
+  /* transform: translateX(4px); small animation on hover */
+}
+.hover-animate {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-animate:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.travel-ques{
+  /* padding-top: 60px; */
+  padding-bottom: 60px;
+  /* margin-top: 60px; */
+  margin-bottom: 60px;
+}
+
+.accor-para{
+  text-align: left;
+  font-size: 16px;
+  line-height: 32px;
+}
+div#faqAccordion {
+    border: 1px solid grey !important;
+}
+button.accordion-button.collapsed {
+    /* border-bottom: 1px solid grey !important;
+    background: rgba(50, 40, 40, 0.384) !important; */
+}
+.accordion-item{
+  background-color: rgba(50, 35, 35, 0.384) !important;
+}
+.accordion-button:not(.collapsed){
+  background: none !important;
+  border: none !important;
+}
+.accordion-button:focus{
+  box-shadow: none !important;
+}
+
+/* ==========================================TOUR PAGES END HERE =============================================== */
+
+/* ========================================== GALLERY PAGE CSS START HERE ====================================== */
+.gall{
+  /* padding-top: 60px; */
+  padding-bottom: 60px;
+  /* margin-top: 60px; */
+  margin-bottom: 60px;
+}
+button.tabBtn.active{
+  background-color: #e1540e !important;
+}
+
+.nav-pills .nav-link {
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0 25px;
+  border-radius: 50px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.tab-content img {
+  transition: transform 0.3s ease;
+}
+
+.tab-content img:hover {
+  transform: scale(1.05);
+}
+
+.gall-grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  margin-top: 35px;
+}
+/* ========================================== GALLERY PAGE CSS END HERE ========================================= */
+footer{
+  background-color: rgba(8, 8, 8, 0.851);
+  color: #fff;
+  padding-top: 80px;
+}
+
+footer a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 12px;
+  font-size: 18px;
+}
+.icon-circle {
+    display: flex;
+    gap: 4px;
+}
+.icon-circle i{
+    background-color: white;
+    color: rgb(113, 113, 3);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;         /* Makes it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional shadow */
+    transition: all 0.3s ease;
+}
+
+.icon-circle i:hover {
+    background-color: rgb(92, 92, 1);
+    color: white;
+}
+
+.foot-head{
+  font-size: 34px;
+  font-weight: 500;
+  padding-bottom: 35px;
+}
+.social {
+    display: flex;
+    gap: 10px;
+}
+.bottom-foot{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #fff;
+  margin-top: 40px;
+}
+.bottom-foot p{
+  text-align: center;
+  font-size: 18px;
+}
+/* ======================================================== Service Page ================================================  */
+
+.package-overview h2 {
+  font-weight: bold;
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+}
+
+.package-overview ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.package-overview ul i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.price-box {
+  background: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+li:hover {
+  transform: translateX(5px);
+  transition: 0.3s ease;
+}
+
+.bg1{
+  background-color: rgba(242, 234, 234, 0.963);
+}
+
+.Inclu-Exclu{
+  padding-bottom: 50px;
+}
+
+/* ================================================ India Page ====================================== */
+.about-india p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #444;
+  }
+  .about-india img {
+    transition: transform 0.3s ease;
+  }
+  .about-india img:hover {
+    transform: scale(1.05);
+  }
+
+  .culture-festivals img {
+    height: 450px;
+    object-fit: cover;
+  }
+  .carousel-caption h5 {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .carousel-caption p {
+    color: #ddd;
+    font-size: 1rem;
+  }
+  .caption-bg{
+    background-color: #3e2b2b;
+  }
+  .cuisine img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 6px;
+  }
+  .hover-card:hover img {
+    transform: scale(1.05);
+  }
+  .card-title {
+    color: #d9534f;
+  }
+  .cuisine{
+    background-color: rgb(223, 230, 233);
+    padding-bottom: 60px;
+  }
+  .reach-india{
+    margin-bottom: 60px;
+  }
+
+  /* ============================================================ Blog Pag e====================================== */
+  .card-img-top{
+    height: 250px;
+    object-fit: cover;
+  }
+  .read-btn{
+  background: linear-gradient(to left, #ff9900 50%, rgb(103, 103, 74) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-position 0.4s ease-in-out;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+.read-btn:hover{
+    background-position: left bottom;
+}
+
+  button.btn-primary {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #eb9c25;
+  }
+
+  button.btn-primary:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+  }
+
+  .newsletter{
+    margin-bottom: 60px;
+  }
